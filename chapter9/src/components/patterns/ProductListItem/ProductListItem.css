@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #EDEDED;
+  padding: 8px;
+  max-width: 240px;
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.card.sale{
+  background-color: #E8F6FF;
+}
+
+.card button {
+  background-color: #0A84FF;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.card small::before {
+  content: '$'
+}

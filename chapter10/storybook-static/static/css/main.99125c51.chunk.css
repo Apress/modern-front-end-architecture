@@ -1,0 +1,41 @@
+.card {
+  background-color: var(--background);
+  color: var(--primary);
+  padding: var(--spacing-medium);
+  margin: var(--spacing-large);
+  border: var(--border-default);
+  border-color: var(--light);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-default);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #EDEDED;
+  padding: 8px;
+  max-width: 240px;
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.card.sale{
+  background-color: #E8F6FF;
+}
+
+.card button {
+  background-color: #0A84FF;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.card small::before {
+  content: '$'
+}
+
+
+/*# sourceMappingURL=main.99125c51.chunk.css.map*/

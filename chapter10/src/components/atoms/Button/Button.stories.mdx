@@ -1,0 +1,28 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import Button from "./Button";
+
+<Meta title="atoms/Button" component={Button} />
+
+# Button
+
+This is the **Button** component. The intent of the **Button** is that it will be used for anything that takes a _click_ event with a callback. There is a similar, _Link_ component, but that interacts with navigation, where the **Button** has an event.
+
+<Button onClick={console.log}>Click here</Button>
+
+_This is a button outside of the Storybook Canvas_
+
+## More documentation
+
+<Canvas>
+  <Story name="standard">
+    <Button
+      onClick={() => {
+        console.log("hi");
+      }}
+    >
+      Click me
+    </Button>
+  </Story>
+</Canvas>
+
+Other markdown like [Links](http://www.google.com) work also!
